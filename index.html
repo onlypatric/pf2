@@ -4,74 +4,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tailwind CSS with CDN</title>
+  <title>Patric Pintescul - Website developer and social media manager</title>
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Tailwind CSS CONFIG -->
   <script>
-    tailwind.config;
+    tailwind.config;//unaltered
+  </script>
+  <meta name="description"
+    content="Patric Pintescul is a website developer and social media manager helping small to medium-sized businesses create custom websites, manage Instagram accounts, and provide expert website copywriting. Explore my services, skills, and story." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&family=Space+Grotesk:wght@300..700&display=swap"
+  rel="stylesheet">
+  <meta property="og:title" content="Home page - Website Development & Social Media Management | Patric Pintescul">
+  <meta property="og:description"
+    content="Learn more about how Patric Pintescul helps businesses through website development and social media management services.">
+  <meta property="og:url" content="https://pintescul.altervista.org">
+  <style type="text/tailwindcss">
+    .main-sector{
+      @apply bg-[#F4EFED] h-screen grid place-items-center snap-start text-black
+    }
+    .poppins{
+      font-family: "Poppins" sans-serif;
+    }
+    .suse{
+      font-family: "SUSE" sans-serif;
+    }
+    .grotesk{
+      font-family: "Space Grotesk", sans-serif;
+    }
+    h2{
+      @apply select-none font-bold
+    }
+    img.signature{
+      @apply w-60 select-none
+    }
+    a.little-nav{
+      @apply p-2 m-2 bg-[#fefbfa] shadow-inner drop-shadow-sm rounded-xl w-max shadow-stone-100 w-full min-w-60
+    }
+    a.little-nav:hover{
+      @apply bg-[#f3e4de]
+    }
+    a.little-nav:focus{
+      @apply bg-[#e1dad7]
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://pintescul.altervista.org",
+    "@type": "Person",
+    "name": "Patric Pintescul",
+    "jobTitle": "Website Developer and Social Media Manager",
+    "url": "https://pintescul.altervista.org",
+    "sameAs": [
+      "https://www.instagram.com/only.patric"
+    ],
+    "worksFor": {
+      "@type": "PStudios",
+      "name": "Patric Studios",
+      "url": "https://pintescul.altervista.com"
+    },
+    "description": "Patric Pintescul helps small to medium-sized businesses build websites, manage Instagram accounts, and provides expert website copywriting."
+  }
   </script>
 </head>
 
-<body class="text-white bg-black">
+<body class="text-white bg-black poppins">
   <div class="h-screen overflow-y-auto snap-y snap-mandatory">
   
     <!-- Section 1 -->
-    <div class="h-screen bg-emerald-800 flex items-center justify-center snap-start">
-      <h2 class="text-4xl font-bold text-white">
-        <span class="text-rose-600 text-shadow">Plain</span>.
-        <br>
-        <span class="text-amber-600 text-shadow">Simple</span>.
-        <br>
-        Just as<br>you want it.</h2>
+    <div class="main-sector">
+      <div class="p-2 m-8">
+        <h2 class="grotesk">Hello, I'm</h2>
+        <img src="signature.png" class="signature" alt="">
+        <h1 class="grotesk font-bold">I help small to medium size businesses build their website.</h1>
+      </div>
     </div>
   
     <!-- Section 2 -->
-    <div class="h-screen bg-emerald-800 grid place-items-center snap-start">
+    <div class="main-sector">
       <div class="p-2 m-8">
-        <h2 class="text-2xl font-bold text-white">Alright let's cut the crap,</h2>
-        <h1 class="text-4xl font-bold text-white text-shadow">I build websites and help businesses reach customers through social media.</h1>
-        <a hidden href="#" class="text-xl text-rose-200 text-right underline">Read my daily quotes</a>
-        <br>
-        <a href="#" class="text-xl text-rose-200 text-right underline">What I've achieved</a>
-        <br>
-        <a href="#" class="text-xl text-rose-200 text-right underline">Read my story</a>
-        <br>
-        <a href="#" class="text-xl text-rose-200 text-right underline">Reach me</a>
+        <h2>Navigate quickly to</h2>
+        <div class="flex flex-col w-full justify-center items-center">
+          <a href="/my-skills/" class="little-nav grotesk font-bold">My skills</a>
+          <a href="mailto:patric.pnt@icloud.com" class="little-nav grotesk font-bold">My Email</a>
+          <a href="/my-story/" class="little-nav grotesk font-bold">My story</a>
+          <a href="https://www.instagram.com/only.patric" class="little-nav grotesk font-bold">My social media</a>
+        </div>
       </div>
     </div>
   
     <!-- Section 3 -->
-    <div class="h-screen bg-cyan-900 text-white grid place-items-center snap-start">
+    <div class="main-sector">
       <div class="p-2 m-8">
-        <h2 class="text-4xl font-bold">
-          Learn more about
-        </h2>
-        <div class="flex flex-col">
-          <a href="#" class="text-xl text-red-100 text-right underline">What is copywriting?</a>
-          <a href="#" class="text-xl text-red-100 text-right underline">Why you need a new website?</a>
-          <a href="#" class="text-xl text-red-100 text-right underline">Why is social media important?</a>
-        </div>
-        <h2 class="text-4xl font-bold mt-10">
-          If you already know what you need
-        </h2>
-        <div class="flex flex-col">
-          <a href="#" class="text-xl text-red-100 text-right underline">Copywriting</a>
-          <a href="#" class="text-xl text-red-100 text-right underline">Website development</a>
-          <a href="#" class="text-xl text-red-100 text-right underline">Instagram Software</a>
+        <h2>Discover my products</h2>
+        <div class="flex flex-col w-full justify-center items-center">
+          <a href="/website-development/" class="little-nav grotesk font-bold">Website development</a>
+          <a href="/instagram-management/" class="little-nav grotesk font-bold">Instagram Management</a>
+          <a href="/copywriting/" class="little-nav grotesk font-bold">Website copywriting</a>
+          <a href="/seo/" class="little-nav grotesk font-bold">SEO</a>
+          <a href="/ux-consulting/" class="little-nav grotesk font-bold">UX Consulting</a>
         </div>
       </div>
     </div>
   
     <!-- Section 4 -->
-    <div class="h-screen bg-red-950 grid place-items-center snap-start">
+    <div class="main-sector">
       <div class="m-8">
-        <h3 class="text-4xl font-bold text-white">Thank you for your time.</h3>
-        <img src="signature.png" class="h-20 invert" alt="">
-        <div class="flex flex-col">
-          <a href="#" class="text-xl text-emerald-600 text-right underline">Find out why my website looks like this</a>
-          <a href="#" class="text-xl text-emerald-600 text-right underline">Email me</a>
-        </div>
+        <p class="grotesk font-bold font-4xl">Thank you.</p>
       </div>
     </div>
   
